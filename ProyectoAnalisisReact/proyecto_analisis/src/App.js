@@ -8,9 +8,9 @@ import ShowUsers from './ShowUsers';
 import RegisterProduct from './RegisterProduct';
 import EditProduct from './EditProduct';
 import ShowProducts from './ShowProducts';
-
-
-
+import ReparacionesView from './Reparaciones';
+import AgregarReparacionForm from './AgregarReparacion';
+import EditarReparacion from './EditarReparacion';
 function App() {
   return (
     <Router>
@@ -25,6 +25,10 @@ function App() {
         <Route path="/EditProduct/:code" element={<EditProduct />} />
         <Route path="/ShowProducts" element={<ShowProducts />} />
 
+
+        <Route path="/reparaciones" element={<ReparacionesView />} />
+        <Route path="/agregarReparacion" element={<AgregarReparacionForm />} />
+        <Route path="/editarReparacion/:id" element={<EditarReparacion />} />
       </Routes>
     </Router>
   );
